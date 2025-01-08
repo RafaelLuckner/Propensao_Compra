@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.Python
+env/
+venv/
+ENV/
+.env/
+.venv/
+.env.*
+.tox/
+.nox/
+.coverage
+.hypothesis/
+.pytest_cache/
+.tox/
+.nox/
+.coverage
+nosetests.xml
+coverage.xml
+*.cover
+*.log
+.python-version
