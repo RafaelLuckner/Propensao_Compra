@@ -53,5 +53,6 @@ class PropensityScore():
         """ Retorna o dataframe com as probabilidades. """
         df = self.data.copy()
         df['score'] = model.predict_proba(self.data)[:,1]
+        df = df.reset_index()
 
         return df.to_json(orient = 'records', date_format='iso') 
