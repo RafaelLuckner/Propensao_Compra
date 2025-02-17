@@ -23,3 +23,5 @@ coverage.xml
 *.log
 .python-version
 .ipynb_checkpoints
+.python*
+.vscode

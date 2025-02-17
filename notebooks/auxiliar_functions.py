@@ -137,6 +137,7 @@ def params_tuning(model, param_grid, df, max_iters=50 ):
 
     return best_params, best_k
 
+
 def curva_ganho(yproba, y_val, close=False, subplot = 2, figsize =(15,4), text=(0.03,0.85), pct_clientes = 0.40):
     data = {
         'prob_compra': yproba[:,1],
@@ -183,7 +184,6 @@ def curva_ganho(yproba, y_val, close=False, subplot = 2, figsize =(15,4), text=(
         arrowprops=dict(arrowstyle='->', color='black'),  # Estilo da seta
         fontsize=12, color='black' # Estilo do texto
     )
-
     # grafico de densidade
     plt.subplot(1,subplot,2)
     plt.title('Distribuição dos Interessados')
@@ -193,6 +193,7 @@ def curva_ganho(yproba, y_val, close=False, subplot = 2, figsize =(15,4), text=(
     plt.legend(['Interessados','Não Interessados'])
     if close:
         plt.close(fig)
+
 
 def precision_top_k(df_validation, yproba, k=1000):
     data = df_validation.copy()
